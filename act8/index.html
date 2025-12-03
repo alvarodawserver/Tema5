@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body id="cuerpo" style="background-color: white;">
     <form action="" id="formulario">
         <fieldset ><legend>Datos personales</legend>
             <label for="nombre">Introduce tu nombre:</label>
@@ -14,10 +14,11 @@
             <textarea name="mensaje" id="mensaje" rows="5" cols="50"></textarea>
         </fieldset>
     
-        <p>Elige un color:</p>
-            <input type="checkbox" name="Rojo" value="rojo">Rojo
-        <br><input type="checkbox" name="Azul" value="azul">Azul
-        <br><input type="checkbox" name="Verde" value="azul">Verde
+        <div id="colores">Elige un color
+            <br><input type="radio" id="color1" value="rojo">Rojo
+            <br><input type="radio" id="color2" value="azul">Azul
+            <br><input type="radio" id="color3" value="verde">Verde
+        </div>
         
     
         <br><label for="asignaturas">Selecciona una asignatura:</label>
@@ -31,12 +32,13 @@
         
         <br>
     
-        <br><label for="dias">Selecciona los dias con disponibilidad:</label>
-            <br><input type="checkbox" id="dia" name="dias" value="lunes">Lunes
-            <br><input type="checkbox" id="dia" name="dias" value="martes">Martes
-            <br><input type="checkbox" id="dia" name="dias" value="miercoles">Miercoles
-            <br><input type="checkbox" id="dia" name="dias" value="jueves">Jueves
-            <br><input type="checkbox" id="dia" name="dias" value="viernes">Viernes
+        <br><div id="dias_disponible">Dias disponibles:
+            <br><input type="checkbox" id="dia1" name="dias" value="lunes">Lunes
+            <br><input type="checkbox" id="dia2" name="dias" value="martes">Martes
+            <br><input type="checkbox" id="dia3" name="dias" value="miercoles">Miercoles
+            <br><input type="checkbox" id="dia4" name="dias" value="jueves">Jueves
+            <br><input type="checkbox" id="dia5" name="dias" value="viernes">Viernes
+        </div>
     
         <br><label for="dias">Selecciona el dia preferente</label>
         <select name="dias_preferencia" id="dias_preferencia">
@@ -52,7 +54,7 @@
         <button type="button" id="sobre">Haz clic sobre mí</button>
 
     </form>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     
 </body>
 </html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <div id="dni">
+            <label for="dni_input">DNI:</label>
+            <input type="text" name="dni_input" id="dni_input">
+
+        </div>
+        <div id="nombre">
+            <label for="nombre_input">Nombre</label>
+            <input type="text" name="nombre_input" id="nombre_input" >
+        </div>
+        
+        <div id="fnac">
+            <label for="fnac_input">F.nac.:</label>
+            <input type="text" name="fnac_input" id="fnac_input" maxlength="9">
+        </div>
+        
+        
+        <div id="email">
+            <label for="email_input">E-mail:</label>
+            <input type="text" name="email_input" id="email_input"
+            pattern="/^(.+\@.+\..+)$/">
+        </div>
+    
+        <div id="pagina">
+            <label for="pagina_input">Pág. Web:</label>
+            <input type="text" name="pagina_input" id="pagina_input"
+            pattern="">
+        </div>
+        
+        
+        <div id="psw">
+            <label for="psw_input">Contraseña:</label>
+            <input type="password" name="psw_input" id="psw_input" >
+        </div>
+        
+        <div id="conf_psw">
+            <label for="conf_psw_input">Confirmar contraseña:</label>
+            <input type="password" name="conf_psw_input" id="conf_psw_input" >
+        </div>
+        <button id="guardar" type="submit">Guardar</button>
+        <button id="ver">Ver</button>
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
