@@ -11,7 +11,8 @@
     <form action="">
         <div id="dni">
             <label for="dni_input">DNI:</label>
-            <input type="text" name="dni_input" id="dni_input">
+            <input type="text" name="dni_input" id="dni_input"
+            pattern="^\d{2}\.\d{3}\.\d{3}-\w{1}">
 
         </div>
         <div id="nombre">
@@ -27,14 +28,14 @@
         
         <div id="email">
             <label for="email_input">E-mail:</label>
-            <input type="text" name="email_input" id="email_input"
-            pattern="/^(.+\@.+\..+)$/">
+            <input type="email" name="email_input" id="email_input"
+            pattern="^\w{3}@\w{3}\.\w{3}">
         </div>
     
         <div id="pagina">
             <label for="pagina_input">Pág. Web:</label>
             <input type="text" name="pagina_input" id="pagina_input"
-            pattern="">
+            pattern="/.+/">
         </div>
         
         
