@@ -16,7 +16,7 @@ document.getElementById("enviar").addEventListener("click",()=>{
     });
 })
 //Dias elegidos
-const checkbox_dias = document.getElementById("dias_disponible").querySelectorAll('input');
+const checkbox_dias = document.getElementById("dias_disponible").querySelector('input[name=dias]:checked');
 let dia_elegido = "";
 checkbox_dias.forEach(dia => {
     dia.addEventListener("click",()=>{
